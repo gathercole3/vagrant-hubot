@@ -1,0 +1,9 @@
+hubot:
+ build: /vagrant/hubot
+ restart: always
+ env_file: .env
+ ports:
+  - "9000:8080"
+ volumes:
+  - /vagrant/hubot/scripts:/opt/hubot/scripts
+  - /vagrant/hubot/bin:/opt/hubot/bin
